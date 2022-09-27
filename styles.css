@@ -1,5 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #cs1300-gallery {
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 /* Uncomment below if images are way too big.
@@ -11,4 +16,56 @@ Selects all image tags and makes them 500px;
 
 .gallery-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  width: 100vw;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  width: '100%';
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* margin-bottom: 20px; */
+}
+
+.gallery-item {
+  width: 33vw;
+  aspect-ratio: 1;
+}
+
+#custom-header {
+  display: flex;
+  width: '100%';
+  height: 10vh;
+  background-color: rgb(55, 182, 225);
+  align-items: center;
+  justify-content: center;
+}
+
+#update-btn {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 'auto';
+  border: solid 2px rgb(55, 182, 225);
+  background-color: white;
+  border-radius: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(55, 182, 225);
+}
+
+#update-btn:hover {
+  background-color: rgb(55, 182, 225);
+  color: white;
+}
+
+#btn-wrapper {
+  display: flex;
+  height: auto;
+  justify-content: center;
 }
